@@ -7,7 +7,7 @@ let matches = 0;
 let body = document.querySelector('.body');
 let clickCount = 0;
 
-axios.get('https://api.thecatapi.com/v1/images/search?limit=6')
+axios.get("https://api.thecatapi.com/v1/images/search?limit=6")
 .then( response => {
     console.log(response.data);
     populateDeck(response.data);
@@ -19,7 +19,6 @@ axios.get('https://api.thecatapi.com/v1/images/search?limit=6')
 })
 
 function populateDeck(pack){
-    //the url array
     for(let i = 0; i < 6; i++){
         newDeck.push(pack[i].url);
         newDeck.push(pack[i].url);
@@ -40,7 +39,6 @@ function newGame(){
 }
 
 function shuffleCards(){
-    //THIS IS NOT MINE: THE DURSTENFELD SHUFFLE
     for (let i = newDeck.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
         let temp = newDeck[i];
@@ -71,8 +69,6 @@ function makeDeck(){
         catPic.classList.add('the-cards__image');
         cardFront.appendChild(catPic);
         catPic.setAttribute('src', newDeck[i]);
-        // let catURL = newDeck[i];
-        // cardFront.style.backgroundImage = `url(${catURL})`
 
         card.addEventListener('click', () => {
             cardSelect(card, newDeck[i]);
@@ -82,7 +78,6 @@ function makeDeck(){
 }
 
 function cardSelect(curCard, cardUrl){
-    // let curCard = document.querySelector('.the-cards__card');
         if(flippedCards.length < 2) {
             updateClickCount();
             clickCount++;

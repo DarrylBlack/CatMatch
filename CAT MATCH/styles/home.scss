@@ -1,9 +1,9 @@
-@use './partials/typography' as *;
+@use "../styles/partials/typography" as *;
 
 * {
     margin: 0;
     padding:0;
-    font-family: 'maintext';
+    font-family: "maintext";
 }
 
 .navigation {
@@ -23,7 +23,6 @@
 }
 
 .link-items{
-    // width: 100%;
     padding: 1rem;
     
 
@@ -40,7 +39,7 @@
 
 
 .cat-match {
-    background-image: url(/assets/gradient-pink-white-linear-5120x2880-c2-ffffff-ffb6c1-a-270-f-14.png);
+    background-image: url(../assets/gradient-pink-white-linear-5120x2880-c2-ffffff-ffb6c1-a-270-f-14.png);
     padding-top: 2rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,10 +77,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // background-color: lightpink;
-    // border: 9px solid hotpink;
     height: 500px;
-    // border-radius: 100%;
     width: 500px;
     backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, .5);
