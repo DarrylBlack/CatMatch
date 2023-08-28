@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "maintext";
+  src: url(../../fonts/bubblegum/Bubblegum.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body {
+  width: 80rem;
+  height: 63rem;
+  background-image: linear-gradient(rgb(252, 138, 157), rgb(248, 218, 218));
+  border-radius: 2rem;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.click-count {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 1rem 7rem;
+  color: white;
+  font-family: "maintext";
+}
+
+.the-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.the-cards__card-front {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+  box-shadow: 1px 2px 4px #d25f7c;
+  height: 15rem;
+  width: 15rem;
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+}
+.the-cards__card-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+  box-shadow: 1px 2px 4px #d25f7c;
+  height: 15rem;
+  width: 15rem;
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.the-cards__card {
+  position: relative;
+  height: 15rem;
+  width: 15rem;
+  cursor: pointer;
+  margin: 1rem;
+}
+.the-cards__image {
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+}
+.the-cards__image-back {
+  width: 80%;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 120%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: pink;
+}
+.overlay__message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  padding-top: 10rem;
+  font-family: "maintext";
+}
+.overlay__click-message {
+  font-size: 6rem;
+  text-align: center;
+  padding: 1rem 4rem;
+}
+.overlay__home-button {
+  font-family: "maintext";
+  font-size: 2rem;
+  color: white;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.the-cards__card .the-cards__card-front {
+  transform: rotateY(-180deg);
+}
+
+.the-cards__card.flip .the-cards__card-back {
+  transform: rotateY(180deg);
+}
+
+.the-cards__card.flip .the-cards__card-front {
+  transform: rotateY(0);
+}
+
+.button {
+  font-family: "maintext";
+  font-size: 2rem;
+  position: relative;
+  bottom: -55rem;
+  left: 37rem;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 10px;
+}/*# sourceMappingURL=game.css.map */

@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "maintext";
+  src: url(../../fonts/bubblegum/Bubblegum.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "maintext";
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 1rem;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0;
+  box-shadow: 35px 35px 68px 0px rgba(4, 0, 5, 0.5), inset -9px -9px 16px 0px rgba(115, 174, 246, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+.navigation__title {
+  color: #b6d1f9;
+}
+
+.link-items {
+  padding: 1rem;
+}
+.link-items__links {
+  color: #b6d1f9;
+  text-decoration: none;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.cat-match {
+  background-image: url(/assets/gradient-pink-white-linear-5120x2880-c2-ffffff-ffb6c1-a-270-f-14.png);
+  padding-top: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cat-match__container-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+.cat-match__box-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cat-match__bubble-header {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  top: 2rem;
+  height: 24vh;
+}
+.cat-match__bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+  box-shadow: 8px 8px 68px 0px rgba(255, 140, 218, 0.5), inset -5px -5px 16px 0px rgba(153, 195, 246, 0.41), inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+.cat-match__image {
+  width: 65%;
+}
+.cat-match .cat-match__bubble:active {
+  transform: scale(0.8);
+}
+.cat-match__container-2 {
+  display: flex;
+  justify-content: space-around;
+}
+.cat-match__box-2 {
+  text-align: center;
+}
+.cat-match__box-3 {
+  text-align: center;
+}/*# sourceMappingURL=home.css.map */
